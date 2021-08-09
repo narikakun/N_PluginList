@@ -2,6 +2,25 @@ name: N_PluginList
 version: @version@
 main: io.github.narikakun.mc.n_pluginlist.N_PluginList
 api-version: 1.16
-authors: [narikakun]
+authors: [ narikakun ]
 description: 世界中（サーバー内）のプラグイン一覧を見れるようにします。
 website: https://narikakun.github.io/
+
+commands:
+  serverplugins:
+    description: 世界中（サーバー内）のプラグイン一覧を表示します。
+    usage: /<command>
+    permission: npluginlist.serverplugins
+    permission-message: お前にこのサーバーのプラグインを見る資格はねぇぞ！！！ <permission>をゲットしてから出直してこい。
+    aliases: [sp, plugins, pl, version, ver, help]
+
+permissions:
+  npluginlist.serverplugins:
+    description: プラグインリストを表示する権限
+    default: op
+  bukkit.command.plugins:
+    default: op
+  bukkit.command.version:
+    default: op
+  bukkit.command.help:
+    default: op
