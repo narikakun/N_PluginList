@@ -1,0 +1,7 @@
+name: N_PluginList
+version: @version@
+main: io.github.narikakun.mc.n_pluginlist.N_PluginList
+api-version: 1.16
+authors: [narikakun]
+description: 世界中（サーバー内）のプラグイン一覧を見れるようにします。
+website: https://narikakun.github.io/
