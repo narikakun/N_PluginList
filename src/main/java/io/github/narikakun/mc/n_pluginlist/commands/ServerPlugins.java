@@ -20,7 +20,7 @@ public class ServerPlugins implements CommandExecutor {
             String plist = "";
             for(Plugin plugin : Bukkit.getPluginManager().getPlugins())
             {
-                if (plist.equals("")) plist += ", ";
+                if (!plist.equals("")) plist += ", ";
                 plist += plugin.getName();
             }
             sender.sendMessage(plist);
